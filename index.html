@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meg World Technologies | Software Development Company Malaysia</title>
+<meta name="description" content="Meg World Technologies is a leading software development company serving Malaysia — custom software, website development, mobile apps, ERP, CRM, HRM, POS and cloud solutions for startups, SMEs and enterprises.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+
+    <div class="topbar-left">
+      <span>
+        <i class="fa-solid fa-location-dot"></i>
+        Tapah, Perak, Malaysia
+      </span>
+
+      <span>
+        <i class="fa-regular fa-envelope"></i>
+        info@megworldtech.com
+      </span>
+
+      <span>
+        <i class="fa-solid fa-phone"></i>
+        +91 99 626 89 777
+      </span>
+    </div>
+
+   <div class="topbar-social">
+
+    <a href="https://www.facebook.com/megworldtechnologies"
+       aria-label="Facebook"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://in.linkedin.com/company/megworldtechnologies"
+       aria-label="LinkedIn"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.instagram.com/meg_world_technologies"
+       aria-label="Instagram"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/919962689777"
+       aria-label="WhatsApp"
+       target="_blank"
+       rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</div>
+
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="navbar" id="navbar">
+
+        <div class="container nav-inner">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <div class="logo-mark">
+                    <img src="assets/Meg-logo.webp" alt="Meg World Technologies">
+                </div>
+            </a>
+
+            <!-- NAVIGATION -->
+            <ul class="nav-links">
+
+                <li  class="active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+
+                 <li>
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="industries.html" class="nav-link">Industries</a>
+                </li>
+
+                <li>
+                    <a href="packages.html" class="nav-link">Packages</a>
+                </li>
+
+                <li>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                
+                <li>
+                    <a href="faq.html" class="nav-link">Faq</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- RIGHT SIDE -->
+            <div class="nav-cta">
+
+                <a href="contact.html" class="btn btn-primary">
+                    <span>Free Consultation</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="burger" id="burgerBtn" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-head">
+
+        <a href="index.html" class="mobile-logo">
+            <img src="assets/Meg-logo.webp" alt="Meg World Technologies">
+        </a>
+
+        <button class="mobile-menu-close" id="mobileClose" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <ul class="mobile-nav">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="about.html">About Us</a></li>
+
+        <li><a href="services.html">Services</a></li>
+
+        <li><a href="portfolio.html">Portfolio</a></li>
+
+        <li><a href="industries.html">Industries</a></li>
+
+        <li><a href="packages.html">Packages</a></li>
+
+        <li><a href="blog.html">Blog</a></li>
+
+        <li><a href="faq.html">Faq</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <a href="contact.html" class="btn btn-primary mobile-btn">
+        Get Free Consultation
+    </a>
+
+</nav>
+
+<!-- HERO -->
+<!-- Pinned scroll stage: gives the cinematic scrub room to play out.
+     Wrapper is purely structural for the scroll effect — the hero
+     inside it keeps its exact original markup, classes and styling. -->
+<div class="hero-scroll-stage" id="heroScrollStage">
+
+<section class="hero hero--cinematic">
+
+    <div class="hero-slider" id="heroSlider">
+
+        <!-- Cinematic background video (replaces the old slide images) -->
+       <video
+    class="hero-video"
+    id="heroVideo"
+    src="assets/hero-cinematic.mp4"
+    muted
+    playsinline
+    preload="auto"
+></video>
+
+        <!-- Floating particles layer (independent parallax depth) -->
+        <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+
+        <div class="hero-slide active">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        DIGITAL TRANSFORMATION
+                    </span>
+
+                    <h1>
+                        Empowering Businesses
+                        With
+                        <span class="accent">
+                            Innovative Technology Solutions
+                        </span>
+                    </h1>
+
+                    <p>
+                        We build powerful websites, enterprise software,
+                        mobile applications and AI-powered digital
+                        solutions that help Malaysian businesses grow
+                        faster and smarter.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="contact.html" class="btn btn-primary">
+                            <span>Get Free Consultation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="portfolio.html" class="btn btn-outline">
+                            <span>View Portfolio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+<!-- /.hero-scroll-stage -->
+
+<!-- STATS -->
+<!--==================================================
+STATS SECTION
+==================================================-->
+
+<section class="stats-bar">
+
+    <div class="container">
+
+        <div class="stats-inner">
+
+            <!-- Stat 1 -->
+
+            <div class="stat">
+
+                <div class="num">
+
+                    <span class="count" data-target="30">0</span>
+
+                    <span class="plus">+</span>
+
+                </div>
+
+                <p>SUCCESSFULLY DELIVERED PROJECTS</p>
+
+            </div>
+
+            <!-- Stat 2 -->
+
+            <div class="stat">
+
+                <div class="num">
+
+                    <span class="count" data-target="45">0</span>
+
+                    <span class="plus">+</span>
+
+                </div>
+
+                <p>HAPPY BUSINESS CLIENTS</p>
+
+            </div>
+
+            <!-- Stat 3 -->
+
+            <div class="stat">
+
+                <div class="num">
+
+                    <span class="count" data-target="6">0</span>
+
+                    <span class="plus">+</span>
+
+                </div>
+
+                <p>READY SOFTWARE PRODUCTS</p>
+
+            </div>
+
+            <!-- Stat 4 -->
+
+            <div class="stat">
+
+                <div class="num">
+
+                    <span class="count" data-target="24">0</span>
+
+                    <span class="plus">/7</span>
+
+                </div>
+
+                <p>TECHNICAL SUPPORT</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="mw-services" id="services">
+
+    <div class="container">
+
+        <div class="mw-services-head">
+
+            <span class="section-tag">
+                OUR SERVICES
+            </span>
+
+            <h2>
+                Smart Digital Solutions for <br>
+                <span style="color: #2563eb;">Businesses in Malaysia</span>
+            </h2>
+
+
+            <p>
+                Meg World Technologies delivers innovative technology solutions including website development, mobile applications, custom software, digital marketing, graphic design and professional video editing to help businesses grow faster in the digital world.
+            </p>
+
+        </div>
+
+        <div class="mw-services-grid">
+
+            <!-- 1 -->
+            <article class="mw-service-card">
+                <div class="mw-service-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <h3>Website Development</h3>
+
+                <p>
+                    Responsive, SEO-friendly business websites, corporate portals, eCommerce stores and custom web solutions designed for maximum performance.
+                </p>
+
+                <a href="services.html" class="mw-service-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <!-- 2 -->
+            <article class="mw-service-card">
+                <div class="mw-service-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>Mobile App Development</h3>
+
+                <p>
+                    High-performance Android, iOS and Flutter mobile applications with intuitive UI, secure architecture and seamless user experience.
+                </p>
+
+                <a href="services.html" class="mw-service-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <!-- 3 -->
+            <article class="mw-service-card">
+                <div class="mw-service-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Software Development</h3>
+
+                <p>
+                    Custom software solutions that automate business operations, improve productivity and support long-term business growth.
+                </p>
+
+                <a href="services.html" class="mw-service-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <!-- 4 -->
+            <article class="mw-service-card">
+                <div class="mw-service-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+
+                <h3>Digital Marketing</h3>
+
+                <p>
+                    Grow your brand with SEO, Google Ads, Meta Ads, social media marketing and data-driven digital campaigns.
+                </p>
+
+                <a href="services.html" class="mw-service-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <!-- 5 -->
+            <article class="mw-service-card">
+                <div class="mw-service-icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <h3>Graphic Design</h3>
+
+                <p>
+                    Creative branding, logo design, social media creatives, brochures, banners and marketing materials that make your business stand out.
+                </p>
+
+                <a href="services.html" class="mw-service-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+            <!-- 6 -->
+            <article class="mw-service-card">
+                <div class="mw-service-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+                <h3>Video Editing</h3>
+
+                <p>
+                    Professional promotional videos, social media reels, corporate presentations and engaging video content for your brand.
+                </p>
+
+                <a href="services.html" class="mw-service-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about-v3" id="about">
+
+    <div class="container">
+
+        <div class="about-v3-grid">
+
+            <!-- LEFT -->
+
+            <div class="about-v3-image">
+
+                <img src="assets/building.webp" alt="Meg World Technologies Malaysia">
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="about-v3-content">
+
+                <span class="about-v3-tag">
+                    ABOUT US
+                </span>
+
+                <h2>
+                    Empowering Businesses With <br>
+                    <span style="color: #2563eb;">Innovative Digital Solutions</span>
+                    Across Malaysia
+                </h2>
+
+
+                <p>
+                    Meg World Technologies is a leading technology company dedicated to helping businesses succeed through innovative digital solutions. We specialize in website development, mobile app development, custom software development, digital marketing, graphic design, and professional video editing. Our mission is to deliver high-quality, scalable, and cost-effective solutions that drive business growth and digital transformation across Malaysia.
+                </p>
+
+                <div class="about-v3-list">
+
+                    <div><i class="fa-solid fa-check"></i> Website Development</div>
+
+                    <div><i class="fa-solid fa-check"></i> Mobile App Development</div>
+
+                    <div><i class="fa-solid fa-check"></i> Software Development</div>
+
+                    <div><i class="fa-solid fa-check"></i> Digital Marketing</div>
+
+                    <div><i class="fa-solid fa-check"></i> Graphic Design</div>
+
+                    <div><i class="fa-solid fa-check"></i> Video Editing</div>
+
+                </div>
+
+                <a href="about.html" class="btn btn-primary">
+
+                    Learn More
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+<!--==================================================
+WHY CHOOSE US
+==================================================-->
+<section class="why-choose">
+
+    <div class="container">
+
+        <div class="why-heading">
+
+            <span class="section-tag">
+                WHY CHOOSE US
+            </span>
+
+            <h2>
+                Why Businesses Choose <br>
+                <span>Meg World Technologies</span>
+            </h2>
+
+            <p>
+                We help startups, SMEs, and enterprises across Malaysia achieve digital success through innovative technology solutions, creative services, and reliable support tailored to their business needs.
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <!-- Card 1 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+                <div class="why-content">
+
+                    <h3>Website Development</h3>
+
+                    <p>
+                        We design and develop responsive, SEO-optimized websites, business portals, and eCommerce solutions that strengthen your online presence and drive business growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <div class="why-content">
+
+                    <h3>Software Development</h3>
+
+                    <p>
+                        Our custom software solutions streamline business operations, automate workflows, and improve efficiency with scalable and secure applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                </div>
+
+                <div class="why-content">
+
+                    <h3>Mobile App Development</h3>
+
+                    <p>
+                        Build powerful Android, iOS, and cross-platform mobile applications that deliver exceptional user experiences and support business growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+                <div class="why-content">
+
+                    <h3>Digital Marketing</h3>
+
+                    <p>
+                        Increase your brand visibility through SEO, social media marketing, Google Ads, Meta Ads, and performance-driven digital campaigns.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-pen-ruler"></i>
+
+                </div>
+
+                <div class="why-content">
+
+                    <h3>Graphic Design</h3>
+
+                    <p>
+                        Enhance your brand identity with professional logo design, brochures, business branding, social media creatives, and marketing materials.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-film"></i>
+
+                </div>
+
+                <div class="why-content">
+
+                    <h3>Video Editing</h3>
+
+                    <p>
+                        Create engaging promotional videos, corporate presentations, product showcases, and social media content with our professional video editing services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<!-- ==========================================================
+     OUR SOFTWARE PRODUCTS
+     ========================================================== -->
+
+<section class="products-section" id="products">
+
+    <div class="container">
+
+        <!-- PRODUCTS HEADING -->
+        <div class="products-heading">
+
+            <span class="section-tag">
+                OUR SOFTWARE PRODUCTS
+            </span>
+
+            <h2>
+                Powerful Business <br>
+                <span>Software Solutions</span>
+            </h2>
+
+            <p>
+                Empower your business with our industry-focused software solutions designed to streamline operations, improve productivity, and accelerate digital transformation for businesses across Malaysia.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCTS GRID -->
+        <div class="products-grid">
+
+            <!-- PRODUCT 01 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/hrm.webp" alt="HRM Software">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Human Resources
+                    </span>
+
+                    <h3>
+                        HRM Software
+                    </h3>
+
+                    <p>
+                        Simplify employee management with payroll, attendance, leave tracking, recruitment, and performance management in one integrated platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 02 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/crm.webp" alt="CRM Software">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Customer Management
+                    </span>
+
+                    <h3>
+                        CRM Software
+                    </h3>
+
+                    <p>
+                        Manage customer relationships, sales pipelines, lead tracking, follow-ups, and business communications with an intelligent CRM solution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 03 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/pos.webp" alt="POS Software">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Retail Solution
+                    </span>
+
+                    <h3>
+                        POS Software
+                    </h3>
+
+                    <p>
+                        A smart Point of Sale system with billing, inventory management, customer records, sales analytics, and multi-store support.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 04 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/rest.webp" alt="Restaurant Management System">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Restaurant
+                    </span>
+
+                    <h3>
+                        Restaurant Management System
+                    </h3>
+
+                    <p>
+                        Efficiently manage table reservations, kitchen orders, billing, inventory, staff, and customer service with an all-in-one restaurant solution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 05 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/cloud.webp" alt="Cloud Room Management">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Hospitality
+                    </span>
+
+                    <h3>
+                        Cloud Room Management
+                    </h3>
+
+                    <p>
+                        Cloud-based room management software for hotels and accommodations with booking management, guest check-in, billing, and reporting.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 06 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/real estate.webp" alt="Real Estate Software">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Real Estate
+                    </span>
+
+                    <h3>
+                        Real Estate Software
+                    </h3>
+
+                    <p>
+                        Manage properties, leads, clients, sales activities, property listings, follow-ups, and real estate operations through one centralized platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 07 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/billing.webp" alt="Billing Software">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Business Billing
+                    </span>
+
+                    <h3>
+                        Billing Software
+                    </h3>
+
+                    <p>
+                        Simplify invoicing, billing, payments, customer records, sales tracking, and financial reporting with an easy-to-use billing solution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 08 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/hospital.webp" alt="Hospital Management System">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Healthcare
+                    </span>
+
+                    <h3>
+                        Hospital Management System
+                    </h3>
+
+                    <p>
+                        Manage patients, appointments, doctors, departments, billing, medical records, pharmacy, and hospital operations in one integrated system.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 09 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/home/school.webp" alt="School Management System">
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        Education
+                    </span>
+
+                    <h3>
+                        School Management System
+                    </h3>
+
+                    <p>
+                        Manage students, teachers, attendance, fees, examinations, communication, academic records, and daily school operations efficiently.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+
+    <div class="container">
+
+        <div class="section-head center">
+
+            <span class="section-tag">
+                Industries We Serve
+            </span>
+
+            <h2>
+                Industry-Focused <br> <span>Business Software Solutions</span>
+            </h2>
+
+            <p>
+                Our software products are designed to simplify operations, improve productivity, and accelerate digital transformation across multiple industries in Malaysia.
+            </p>
+
+        </div>
+
+        <div class="industries-grid">
+
+            <!-- Card 01 -->
+
+            <article class="industry-card">
+
+                <div class="industry-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div class="industry-content">
+
+                    <span class="industry-number">01</span>
+
+                    <h3>Corporate Enterprises</h3>
+
+                    <p>
+                        HRM and CRM solutions for employee management, customer engagement, and business automation.
+                    </p>
+
+                    <a href="industries.html" class="industry-link">
+
+                        Explore Solution
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 02 -->
+
+            <article class="industry-card">
+
+                <div class="industry-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="industry-content">
+
+                    <span class="industry-number">02</span>
+
+                    <h3>Retail & Supermarkets</h3>
+
+                    <p>
+                        Smart POS software for billing, inventory management, customer tracking, and sales reporting.
+                    </p>
+
+                   <a href="industries.html" class="industry-link">
+
+                        Explore Solution
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 03 -->
+
+            <article class="industry-card">
+
+                <div class="industry-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+
+                <div class="industry-content">
+
+                    <span class="industry-number">03</span>
+
+                    <h3>Restaurants & Cafés</h3>
+
+                    <p>
+                        Complete restaurant management software for billing, kitchen orders, inventory, and reservations.
+                    </p>
+
+                   <a href="industries.html" class="industry-link">
+
+                        Explore Solution
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 04 -->
+
+            <article class="industry-card">
+
+                <div class="industry-icon">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+
+                <div class="industry-content">
+
+                    <span class="industry-number">04</span>
+
+                    <h3>Hotels & Hospitality</h3>
+
+                    <p>
+                        Cloud room management software with reservations, guest management, billing, and reporting.
+                    </p>
+
+                   <a href="industries.html" class="industry-link">
+
+                        Explore Solution
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 05 -->
+
+            <article class="industry-card">
+
+                <div class="industry-icon">
+                    <i class="fa-solid fa-city"></i>
+                </div>
+
+                <div class="industry-content">
+
+                    <span class="industry-number">05</span>
+
+                    <h3>Real Estate</h3>
+
+                    <p>
+                        Real Estate ERP & CRM software for property management, lead tracking, customer engagement, and sales.
+                    </p>
+
+                   <a href="industries.html" class="industry-link">
+
+                        Explore Solution
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 06 -->
+
+            <article class="industry-card">
+
+                <div class="industry-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div class="industry-content">
+
+                    <span class="industry-number">06</span>
+
+                    <h3>Professional Services</h3>
+
+                    <p>
+                        Custom CRM and business software solutions for agencies, consultants, and service-based organizations.
+                    </p>
+
+                   <a href="industries.html" class="industry-link">
+
+                        Explore Solution
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+
+    <div class="container">
+
+<div class="section-head center">
+
+    <span class="section-tag">
+        OUR PROCESS
+    </span>
+
+    <h2>
+        Simple & Transparent <br>
+        <span style="color: #2563eb;">Project Development Process</span>
+    </h2>
+
+    <p>
+        We follow a structured and transparent development process to deliver high-quality websites, software, mobile applications, and digital solutions that help businesses grow with confidence.
+    </p>
+
+</div>
+
+        <div class="process-track">
+
+            <!-- Step 01 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <div class="process-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+
+                <h3>
+                    Discovery & Consultation
+                </h3>
+
+                <p>
+                    We understand your business objectives, project requirements, and recommend the most suitable technology solution.
+                </p>
+
+            </div>
+
+            <!-- Step 02 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <div class="process-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <h3>
+                    Planning & Design
+                </h3>
+
+                <p>
+                    Our team prepares the project roadmap, UI/UX design, workflow, and technical architecture before development begins.
+                </p>
+
+            </div>
+
+            <!-- Step 03 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <div class="process-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>
+                    Development
+                </h3>
+
+                <p>
+                    We build your website, mobile app, software, or business solution using modern technologies and best coding practices.
+                </p>
+
+            </div>
+
+            <!-- Step 04 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    04
+                </div>
+
+                <div class="process-icon">
+                    <i class="fa-solid fa-vial-circle-check"></i>
+                </div>
+
+                <h3>
+                    Testing & Quality Assurance
+                </h3>
+
+                <p>
+                    Every project undergoes comprehensive testing to ensure security, performance, responsiveness, and reliability.
+                </p>
+
+            </div>
+
+            <!-- Step 05 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    05
+                </div>
+
+                <div class="process-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+
+                <h3>
+                    Launch & Deployment
+                </h3>
+
+                <p>
+                    After final approval, we deploy your project, configure the hosting environment, and ensure a smooth launch.
+                </p>
+
+            </div>
+
+            <!-- Step 06 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    06
+                </div>
+
+                <div class="process-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h3>
+                    Ongoing Support
+                </h3>
+
+                <p>
+                    We provide continuous maintenance, updates, technical support, and future enhancements to keep your business growing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--==================================================
+TESTIMONIALS
+==================================================-->
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-head center">
+
+            <p class="section-tag" style="color: #2563eb;font-size: 13px !important;">CLIENT TESTIMONIALS</p>
+
+            <h2>What Our Clients Say</h2>
+            
+
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial-track">
+
+                <!-- Card 1 -->
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "Meg World Technologies delivered our website beyond expectations. Professional team and excellent support."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">AF</div>
+
+                        <div>
+
+                            <h4>Ahmad Faizal</h4>
+
+                            <span>Director, AF Construction</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "Our mobile app was delivered on time with excellent quality. Highly recommended."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">NH</div>
+
+                        <div>
+
+                            <h4>Nurul Hidayah</h4>
+
+                            <span>Founder, MyNurul Collection</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "The ERP software improved our daily operations and increased productivity."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">DL</div>
+
+                        <div>
+
+                            <h4>Daniel Lim</h4>
+
+                            <span>CEO, Lim Logistics</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "Excellent POS software and outstanding after-sales support."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">SR</div>
+
+                        <div>
+
+                            <h4>Siti Rahman</h4>
+
+                            <span>Retail Manager</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Duplicate for Infinite Scroll -->
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "Meg World Technologies delivered our website beyond expectations. Professional team and excellent support."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">AF</div>
+
+                        <div>
+
+                            <h4>Ahmad Faizal</h4>
+
+                            <span>Director, AF Construction</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "Our mobile app was delivered on time with excellent quality. Highly recommended."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">NH</div>
+
+                        <div>
+
+                            <h4>Nurul Hidayah</h4>
+
+                            <span>Founder, MyNurul Collection</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "The ERP software improved our daily operations and increased productivity."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">DL</div>
+
+                        <div>
+
+                            <h4>Daniel Lim</h4>
+
+                            <span>CEO, Lim Logistics</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p class="testimonial-text">
+                        "Excellent POS software and outstanding after-sales support."
+                    </p>
+
+                    <div class="testimonial-user">
+
+                        <div class="testimonial-avatar">SR</div>
+
+                        <div>
+
+                            <h4>Siti Rahman</h4>
+
+                            <span>Retail Manager</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<!--==================================================
+CALL TO ACTION
+==================================================-->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-banner">
+
+            <div class="cta-content">
+
+                <span class="section-tag">
+                    FREE CONSULTATION
+                </span>
+
+                <h2>
+                    Ready to Transform Your Business?
+                </h2>
+
+                <p>
+                    Partner with Meg World Technologies Malaysia to build premium websites, enterprise software, mobile applications and digital solutions that help your business grow faster.
+                </p>
+
+            </div>
+
+            <div class="cta-right">
+
+                <a href="contact.html" class="btn btn-white">
+
+                    <span>Get Free Consultation</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================================
+FLOATING WHATSAPP
+==================================================-->
+
+<a href="https://wa.me/919962689777?text=Hello%20Meg%20World%20Technologies,%20I%20need%20more%20information."
+   class="wa-float"
+   target="_blank"
+   aria-label="WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+
+<footer id="contact">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <!--==================================================
+            ABOUT
+            ==================================================-->
+
+            <div class="footer-about">
+
+                <a href="index.html" class="footer-logo">
+
+                    <img src="assets/logo.webp" alt="Meg World Technologies">
+
+                </a>
+
+                <p>
+                    Meg World Technologies is a trusted technology partner delivering
+                    innovative websites, mobile applications, enterprise software,
+                    digital marketing, AI-powered solutions, and business automation
+                    services for startups, SMEs, and enterprises across Malaysia.
+                </p>
+
+               <div class="footer-social">
+
+                    <a href="https://www.facebook.com/megworldtechnologies" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://in.linkedin.com/company/megworldtechnologies" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/meg_world_technologies" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/919962689777" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            QUICK LINKS — SAME AS HEADER
+            ==================================================-->
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="industries.html">Industries</a>
+                    </li>
+
+                    <li>
+                        <a href="packages.html">Packages</a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">Faq</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!--==================================================
+            SERVICES
+            ==================================================-->
+
+            <div class="footer-links">
+
+                <h4>Our Services</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="services.html">Website Development</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Mobile App Development</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Software Development</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Digital Marketing</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Graphic Design</a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">Video Editing</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!--==================================================
+            PRODUCTS
+            ==================================================-->
+
+           <div class="footer-links">
+
+    <h4>Our Products</h4>
+
+    <ul>
+
+        <li>
+            <a href="products.html">HRM Software</a>
+        </li>
+
+        <li>
+            <a href="products.html">CRM Software</a>
+        </li>
+
+        <li>
+            <a href="products.html">POS Software</a>
+        </li>
+
+        <li>
+            <a href="products.html">Restaurant Management System</a>
+        </li>
+
+        <li>
+            <a href="products.html">Cloud Room Management</a>
+        </li>
+
+        <li>
+            <a href="products.html">Real Estate Software</a>
+        </li>
+
+        <li>
+            <a href="products.html">Billing Software</a>
+        </li>
+
+        <li>
+            <a href="products.html">Hospital Management System</a>
+        </li>
+
+        <li>
+            <a href="products.html">School Management System</a>
+        </li>
+
+    </ul>
+
+</div>
+
+
+            <!--==================================================
+            CONTACT INFORMATION
+            ==================================================-->
+
+            <div class="footer-links">
+
+                <h4>Contact Information</h4>
+
+                <ul class="footer-contact">
+
+                    <li>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Tapah,<br>
+                            Perak, Malaysia
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <span>
+                            info@megworldtech.com
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <span>
+                            +91 99626 89777
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <span>
+                            Monday - Saturday<br>
+                            9:00 AM - 6:00 PM
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+        FOOTER BOTTOM
+        ==================================================-->
+
+        <div class="footer-bottom">
+
+            <div class="footer-copy">
+
+                © 2026
+                <strong>Meg World Technologies</strong>.
+                All Rights Reserved.
+
+            </div>
+
+            <div class="footer-bottom-links">
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms-conditions.html">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="sitemap.html">
+                    Sitemap
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="hero-cinematic.js" defer></script>
+</body>
+</html>
