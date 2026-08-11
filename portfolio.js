@@ -48,24 +48,55 @@ const revealObs = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
 /* ---------- PROJECT CATEGORY FILTER ---------- */
+
 const projectFilters = document.getElementById('projectFilters');
 const projectGrid = document.getElementById('projectGrid');
 
 if (projectFilters && projectGrid) {
-  const filterBtns = projectFilters.querySelectorAll('.filter-btn');
-  const projectCards = projectGrid.querySelectorAll('.project-card');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    const filterBtns = projectFilters.querySelectorAll('.filter-btn');
+    const projectCards = projectGrid.querySelectorAll('.project-card');
 
-      const filter = btn.dataset.filter;
+    /* Default view = ALL PROJECTS */
+    projectGrid.classList.add('is-all-view');
 
-      projectCards.forEach(card => {
-        const match = filter === 'all' || card.dataset.cat === filter;
-        card.classList.toggle('hide', !match);
-      });
+    filterBtns.forEach(btn => {
+
+        btn.addEventListener('click', () => {
+
+            /* Active button */
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.dataset.filter;
+
+            /* Remove previous special view */
+            projectGrid.classList.remove(
+                'is-all-view',
+                'is-mobile-view'
+            );
+
+            /* Set correct view */
+            if (filter === 'all') {
+
+                projectGrid.classList.add('is-all-view');
+
+            } else if (filter === 'app') {
+
+                projectGrid.classList.add('is-mobile-view');
+            }
+
+            /* Show / hide cards */
+            projectCards.forEach(card => {
+
+                const match =
+                    filter === 'all' ||
+                    card.dataset.cat === filter;
+
+                card.classList.toggle('hide', !match);
+            });
+
+        });
+
     });
-  });
 }

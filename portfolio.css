@@ -73,7 +73,7 @@
 
 .project-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(4,minmax(0,1fr));
   gap:24px;
 }
 
@@ -86,6 +86,9 @@
 /* ===== PROJECT CARDS ===== */
 
 .project-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
   background:#fff;
   border:1px solid #e7edf7;
   border-radius:20px;
@@ -108,7 +111,7 @@
 }
 
 .project-image img{
-  width:100%;height:100%;object-fit:cover;display:block;
+  width:100%;height:100%;display:block;
   transition:.6s ease;
 }
 
@@ -150,7 +153,7 @@
 
 .project-card:hover .project-view{opacity:1;transform:translateY(0);}
 
-.project-body{padding:22px 22px 24px;}
+.project-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1;}
 
 .project-cat{
   display:inline-block;
@@ -161,11 +164,11 @@
 
 .project-card:hover .project-cat{letter-spacing:.14em;}
 
-.project-body h3{font-size:19px;margin-bottom:8px;transition:.3s ease;}
+.project-body h3{font-size:15px;margin-bottom:8px;transition:.3s ease;}
 
 .project-card:hover .project-body h3{color:#2563eb;}
 
-.project-body p{font-size:13.5px;line-height:1.75;color:var(--muted);margin-bottom:16px;}
+.project-body p{font-size:13.5px;line-height:1.75;color:var(--muted);margin-bottom:16px;flex:1;}
 
 .project-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#2563eb;transition:.3s ease;}
 
@@ -644,4 +647,247 @@
             0 3px 10px rgba(0,0,0,.60) !important;
     }
 
+}
+/* =========================================================
+   MOBILE APP PORTFOLIO IMAGE
+   ONLY: .project-card[data-cat="app"]
+   ========================================================= */
+
+/* -----------------------------------------
+   DESKTOP
+   ----------------------------------------- */
+
+.project-card[data-cat="app"] .project-image {
+    position: relative !important;
+
+    width: 100% !important;
+
+    /* Increase image height */
+    height: 550px !important;
+
+    /* Remove existing aspect-ratio restriction */
+    aspect-ratio: auto !important;
+
+    overflow: hidden !important;
+
+    background: var(--light-bg) !important;
+}
+
+.project-card[data-cat="app"] .project-image img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+/* -----------------------------------------
+   TABLET
+   ----------------------------------------- */
+
+@media screen and (max-width: 992px) {
+
+    .project-card[data-cat="app"] .project-image {
+        height: 300px !important;
+    }
+
+}
+
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media screen and (max-width: 576px) {
+
+    .project-card[data-cat="app"] .project-image {
+        width: 100% !important;
+
+        /* Taller mobile app screenshot */
+        height: 360px !important;
+
+        aspect-ratio: auto !important;
+
+        overflow: hidden !important;
+    }
+
+    .project-card[data-cat="app"] .project-image img {
+        width: 100% !important;
+        height: 100% !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+}
+/* =========================================================
+   PORTFOLIO MOBILE APP IMAGE
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   DEFAULT / MOBILE APPS TAB
+   Keep original tall mobile-app design
+   --------------------------------------------------------- */
+
+.project-card[data-cat="app"] .project-image {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    aspect-ratio: auto;
+    overflow: hidden;
+    background: var(--light-bg);
+}
+
+.project-card[data-cat="app"] .project-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   ALL PROJECTS ONLY
+   Mobile apps become same visual height as normal cards
+   ========================================================= */
+
+.project-grid.is-all-view
+.project-card[data-cat="app"]
+.project-image {
+
+    height: auto !important;
+
+    aspect-ratio: 16 / 10.5 !important;
+
+    overflow: hidden !important;
+}
+
+
+/* Show TOP of mobile screenshot */
+.project-grid.is-all-view
+.project-card[data-cat="app"]
+.project-image img {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    object-position: top center !important;
+}
+
+
+/* =========================================================
+   MOBILE APPS TAB
+   Restore tall screenshot
+   ========================================================= */
+
+.project-grid.is-mobile-view
+.project-card[data-cat="app"]
+.project-image {
+
+    height: 550px !important;
+
+    aspect-ratio: auto !important;
+
+    overflow: hidden !important;
+}
+
+.project-grid.is-mobile-view
+.project-card[data-cat="app"]
+.project-image img {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    object-position: center !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .project-card[data-cat="app"]
+    .project-image {
+
+        height: 300px;
+    }
+
+    /* ALL PROJECTS */
+    .project-grid.is-all-view
+    .project-card[data-cat="app"]
+    .project-image {
+
+        height: auto !important;
+
+        aspect-ratio: 16 / 10.5 !important;
+    }
+
+    /* MOBILE APPS */
+    .project-grid.is-mobile-view
+    .project-card[data-cat="app"]
+    .project-image {
+
+        height: 300px !important;
+
+        aspect-ratio: auto !important;
+    }
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    /* MOBILE APPS TAB
+       Original tall layout */
+    .project-grid.is-mobile-view
+    .project-card[data-cat="app"]
+    .project-image {
+
+        height: 360px !important;
+
+        aspect-ratio: auto !important;
+    }
+
+
+    /* ALL PROJECTS
+       Same height as website cards */
+    .project-grid.is-all-view
+    .project-card[data-cat="app"]
+    .project-image {
+
+        height: auto !important;
+
+        aspect-ratio: 16 / 10.5 !important;
+    }
+
+
+    /* ALL PROJECTS
+       Show only top part of mobile screenshot */
+    .project-grid.is-all-view
+    .project-card[data-cat="app"]
+    .project-image img {
+
+        width: 100% !important;
+
+        height: 100% !important;
+
+        object-fit: cover !important;
+
+        object-position: top center !important;
+    }
 }

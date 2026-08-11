@@ -321,7 +321,7 @@ RESPONSIVE
    PACKAGES HERO
    DESKTOP + MOBILE
    ================================================== */
-
+@media (max-width:768px){
 .pkg-hero{
     position:relative !important;
 
@@ -492,7 +492,7 @@ RESPONSIVE
         0 2px 5px rgba(0,0,0,.90),
         0 3px 10px rgba(0,0,0,.60) !important;
 }
-
+}
 
 /* ==================================================
    MOBILE
