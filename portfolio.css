@@ -810,7 +810,73 @@
 
     object-position: center !important;
 }
+/* =========================================================
+   MOBILE APPS TAB
+   TALL SCREENSHOTS ONLY IN MOBILE APPS VIEW
+   ========================================================= */
 
+.project-grid.is-mobile-view
+.project-card[data-cat="app"]
+.project-image {
+    height: 550px !important;
+    aspect-ratio: auto !important;
+    overflow: hidden !important;
+}
+
+.project-grid.is-mobile-view
+.project-card[data-cat="app"]
+.project-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+}
+
+
+/* =========================================================
+   ALL PROJECTS
+   MOBILE APPS RETURN TO NORMAL SIZE
+   ========================================================= */
+
+.project-grid:not(.is-mobile-view)
+.project-card[data-cat="app"]
+.project-image {
+    height: 260px !important;
+    aspect-ratio: auto !important;
+    overflow: hidden !important;
+}
+
+.project-grid:not(.is-mobile-view)
+.project-card[data-cat="app"]
+.project-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+}
+
+
+/* =========================================================
+   MOBILE VIEW
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    /* Mobile Apps tab = tall */
+    .project-grid.is-mobile-view
+    .project-card[data-cat="app"]
+    .project-image {
+        height: 550px !important;
+    }
+
+    /* All Projects = normal */
+    .project-grid:not(.is-mobile-view)
+    .project-card[data-cat="app"]
+    .project-image {
+        height: 220px !important;
+    }
+
+}
 
 /* =========================================================
    TABLET
