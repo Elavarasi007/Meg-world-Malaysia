@@ -680,3 +680,47 @@ html,body{overflow-x:clip;}
     }
 
 }
+
+/* =========================================================
+   BLOG HERO - MOBILE BANNER
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .blog-hero {
+        background-image: url("assets/mobile_banner/blog.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    /* Hide HTML overlay */
+    .blog-hero-overlay,
+    .blog-hero .hero-overlay,
+    .blog-hero .overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        background: transparent !important;
+    }
+
+    /* Remove pseudo-element overlays */
+    .blog-hero::before,
+    .blog-hero::after {
+        display: none !important;
+        content: none !important;
+        opacity: 0 !important;
+        background: none !important;
+    }
+
+    /* Hide HTML hero content */
+    .blog-hero-content {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+}

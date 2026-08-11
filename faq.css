@@ -524,3 +524,36 @@ FAQ HEADING
     }
 
 }
+
+
+/* =========================================================
+   FAQ HERO - MOBILE BANNER
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .faq-hero {
+        background-image: url("assets/mobile_banner/faq.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    /* Hide HTML text/content */
+    .faq-hero-inner {
+        display: none !important;
+    }
+
+    /* Remove any CSS overlay */
+    .faq-hero::before,
+    .faq-hero::after {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        opacity: 0 !important;
+    }
+
+}

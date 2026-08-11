@@ -736,3 +736,49 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   SERVICES HERO - MOBILE BANNER
+   Show the COMPLETE mobile banner image
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .services-hero {
+        background-image: url("assets/mobile_banner/services.webp") !important;
+
+        /* DO NOT CROP THE IMAGE */
+        background-size: cover !important;
+
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+        
+
+        /* Hero height */
+        min-height: 650px !important;
+
+        /* Remove anything that can cover the image */
+        overflow: hidden !important;
+    }
+
+    /* Hide HTML overlay */
+    .services-hero-overlay {
+        display: none !important;
+    }
+
+    /* Hide HTML hero text */
+    .services-hero-content {
+        display: none !important;
+    }
+
+}

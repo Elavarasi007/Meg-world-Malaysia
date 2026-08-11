@@ -398,3 +398,52 @@
     }
 
 }
+
+
+/* =========================================================
+   ABOUT HERO - MOBILE BANNER
+   REMOVE ALL OVERLAYS + CONTENT
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .about-hero {
+        background-image: url("assets/mobile_banner/about.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+
+        /* Remove possible background effects */
+        background-color: transparent !important;
+    }
+
+    /* Hide HTML overlay */
+    .about-hero-overlay,
+    .about-hero .hero-overlay,
+    .about-hero .overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        background: transparent !important;
+    }
+
+    /* Remove CSS pseudo-element overlays */
+    .about-hero::before,
+    .about-hero::after {
+        display: none !important;
+        content: none !important;
+        opacity: 0 !important;
+        background: none !important;
+    }
+
+    /* Hide HTML hero content */
+    .about-hero-content {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+}

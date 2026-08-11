@@ -565,3 +565,35 @@ CONTACT IMAGE SECTION
     }
     
 }
+
+/* =========================================================
+   CONTACT HERO - MOBILE BANNER
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .contact-hero {
+        background-image: url("assets/mobile_banner/contact.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    /* Hide the HTML text/content */
+    .contact-hero-inner {
+        display: none !important;
+    }
+
+    /* Remove any pseudo-element overlay */
+    .contact-hero::before,
+    .contact-hero::after {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        opacity: 0 !important;
+    }
+
+}

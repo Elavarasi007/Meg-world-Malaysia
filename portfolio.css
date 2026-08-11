@@ -891,3 +891,47 @@
         object-position: top center !important;
     }
 }
+
+/* =========================================================
+   PORTFOLIO HERO - MOBILE BANNER
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .portfolio-hero {
+        background-image: url("assets/mobile_banner/portfolio.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    /* Hide HTML overlay */
+    .portfolio-hero-overlay,
+    .portfolio-hero .hero-overlay,
+    .portfolio-hero .overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        background: transparent !important;
+    }
+
+    /* Remove pseudo-element overlays */
+    .portfolio-hero::before,
+    .portfolio-hero::after {
+        display: none !important;
+        content: none !important;
+        opacity: 0 !important;
+        background: none !important;
+    }
+
+    /* Hide HTML hero content */
+    .portfolio-hero-content {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+}

@@ -607,3 +607,47 @@
     }
 
 }
+
+/* =========================================================
+   INDUSTRIES HERO - MOBILE BANNER
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .industries-hero {
+        background-image: url("assets/mobile_banner/industries.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    /* Hide HTML overlay */
+    .industries-hero-overlay,
+    .industries-hero .hero-overlay,
+    .industries-hero .overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        background: transparent !important;
+    }
+
+    /* Remove pseudo-element overlays */
+    .industries-hero::before,
+    .industries-hero::after {
+        display: none !important;
+        content: none !important;
+        opacity: 0 !important;
+        background: none !important;
+    }
+
+    /* Hide HTML hero content */
+    .industries-hero-content {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+}

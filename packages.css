@@ -93,7 +93,7 @@
 .pkg-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--tier);transform:scaleX(0);transform-origin:left;transition:.4s var(--ease);}
 .pkg-card:hover::before{transform:scaleX(1);}
 .pkg-card::after{content:"";position:absolute;top:-150%;left:-90%;width:45%;height:420%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:rotate(20deg) translateX(-40%);transition:transform .8s var(--ease);pointer-events:none;}
-.pkg-card:hover::after{transform:rotate(20deg) translateX(220%);}
+.pkg-card:hover::after{transform:rotate(20deg) translateX(500%);}
 .pkg-card:hover{transform:translateY(-8px);border-color:#dbe6fb;box-shadow:0 22px 42px rgba(15,23,42,.12);}
 
 .pkg-card.tier-starter{--tier:#16a34a;}
@@ -723,6 +723,50 @@ RESPONSIVE
         text-shadow:
             0 2px 5px rgba(0,0,0,.90),
             0 3px 10px rgba(0,0,0,.60) !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   PACKAGES HERO - MOBILE BANNER
+   ========================================================= */
+
+@media screen and (max-width: 576px) {
+
+    .pkg-hero {
+        background-image: url("assets/mobile_banner/packages.webp") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+
+        min-height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    /* Hide existing hero background layer */
+    .pkg-hero-bg {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        background: none !important;
+    }
+
+    /* Hide HTML hero content */
+    .pkg-hero-content {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+
+    /* Remove possible pseudo-element overlays */
+    .pkg-hero::before,
+    .pkg-hero::after {
+        display: none !important;
+        content: none !important;
+        background: none !important;
+        opacity: 0 !important;
     }
 
 }
