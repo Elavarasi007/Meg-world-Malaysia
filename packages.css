@@ -770,3 +770,28 @@ RESPONSIVE
     }
 
 }
+/* =========================================================
+   FOOTER PRODUCTS
+   ========================================================= */
+
+.footer-products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-products li {
+    margin-bottom: 10px;
+}
+
+.footer-products span {
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-products span:hover {
+    color: #f9fafd;
+}
