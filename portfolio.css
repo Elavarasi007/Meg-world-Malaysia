@@ -841,7 +841,7 @@
 .project-grid:not(.is-mobile-view)
 .project-card[data-cat="app"]
 .project-image {
-    height: 260px !important;
+    height: 180px !important;
     aspect-ratio: auto !important;
     overflow: hidden !important;
 }
