@@ -6,7 +6,7 @@
    the official reference first.
 ===================================================================== */
 
-const PHONE_TEL = "+919962689777";      // from footer contact info
+const PHONE_TEL = "+601121674396";      // from footer contact info
 const PHONE_DISPLAY = "+60 11-2345 6789";
 
 const PACKAGE_DATA = [
